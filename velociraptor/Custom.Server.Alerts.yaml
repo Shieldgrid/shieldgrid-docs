@@ -1,4 +1,4 @@
-name: Artifact.Custom.Server.Alerts
+name: Custom.Server.Alerts
 description: |
   A placeholder VQL artifact for Shieldgrid to query. In a production
   scenario, this would join Server.Alerts or similar tables to output
@@ -17,4 +17,4 @@ sources:
         now() AS timestamp,
         "Example Velociraptor Alert" AS description
       FROM info()
-      WHERE timestamp > parse_time(string=Since)
+      WHERE now() > timestamp(string=Since)
