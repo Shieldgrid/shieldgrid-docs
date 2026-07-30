@@ -27,7 +27,7 @@ This document outlines the proposed frontend routes for `shieldgrid-web`. The de
 - `GET /api/v1/cases` (list all cases)
 - `POST /api/v1/cases` (create a new case)
 
-### `/cases/:id`g
+### `/cases/:id`
 **Purpose:** The detailed investigation workspace for a specific case. Here, analysts can collaborate, update the case status, assign it to a user, and manage evidence. It includes an interface to view linked alerts, attach new relevant alerts, or detach false positives. Future capabilities will allow analysts to trigger response `Action`s directly from this view.
 **Consumes:**
 - `GET /api/v1/cases/{id}` (fetch case details)
