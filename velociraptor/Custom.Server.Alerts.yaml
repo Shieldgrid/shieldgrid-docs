@@ -1,0 +1,20 @@
+name: Artifact.Custom.Server.Alerts
+description: |
+  A placeholder VQL artifact for Shieldgrid to query. In a production
+  scenario, this would join Server.Alerts or similar tables to output
+  normalized alert data.
+
+parameters:
+  - name: Since
+    default: "1970-01-01T00:00:00Z"
+
+sources:
+  - query: |
+      SELECT 
+        uuid() AS id,
+        "High" AS severity,
+        "velociraptor" AS source,
+        now() AS timestamp,
+        "Example Velociraptor Alert" AS description
+      FROM info()
+      WHERE timestamp > parse_time(string=Since)
