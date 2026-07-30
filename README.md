@@ -17,12 +17,15 @@ Docs update on a different cadence than code, and this keeps the [shieldgrid-cor
 
 ```
 docs/
-├── getting-started/
-│   └── install-upgrade.md
 ├── architecture/
 │   ├── system-design.md
-│   ├── data-flows.md
+│   ├── frontend-routing.md
 │   └── database-schema.md
+├── frontend/
+│   ├── overview.md
+│   ├── screens.md
+│   ├── setup.md
+│   └── security.md
 ├── integrations/
 │   └── adding-a-connector.md
 └── user/
