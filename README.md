@@ -18,19 +18,17 @@ Docs update on a different cadence than code, and this keeps the [shieldgrid-cor
 ```
 docs/
 ├── architecture/
-│   ├── system-design.md
+│   ├── vision.md              ← end-state vision, roadmap, decisions
 │   ├── frontend-routing.md
-│   └── database-schema.md
+│   └── response-actions.md
 ├── frontend/
 │   ├── overview.md
 │   ├── screens.md
 │   ├── setup.md
 │   └── security.md
-├── integrations/
-│   └── adding-a-connector.md
-└── user/
-    ├── operator-quickstart.md
-    └── admin-quickstart.md
+└── velociraptor/
+    ├── Custom.Server.Alerts.yaml
+    └── ticket-21-spike-notes.md
 ```
 
 ## Status
